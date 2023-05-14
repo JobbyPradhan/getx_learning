@@ -2,7 +2,7 @@
 
 
 ### Flutter Getx Road Map and what we will learn in this playlist
-- [Get Material App (Why we used Get Material App)] * When you need start using getx Use replace MaterialApp to Get Material App[](https://youtu.be/0Peij4Wr21A)
+- [Get Material App When you need start using getx Use replace MaterialApp to Get Material App](https://github.com/JobbyPradhan/getx_learning/tree/day1)
 - [GetX as utilities such as Snackbar,Dialog Alert,Bottom Sheet,Change Light & Dark Theme](https://github.com/JobbyPradhan/getx_learning/tree/day1)
 - [Getx Navigator & Routes (How to pass data between different screens)]
 - [Get height & Get widh]
