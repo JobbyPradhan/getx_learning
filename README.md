@@ -1,16 +1,32 @@
-# getx_learning
+# Flutter GetX Roadmap
 
-A new Flutter project.
 
-## Getting Started
+### Flutter Getx Road Map and what we will learn in this playlist
+- [Get Material App (Why we used Get Material App)] * When you need start using getx Use replace MaterialApp to Get Material App
+- [GetX as utilities such as Snackbar,Dialog Alert,Bottom Sheet,Change Light & Dark Theme]
+- [Getx Navigator & Routes (How to pass data between different screens)]
+- [Get height & Get widh]
+- [GetX Localization Change the Language of the App i.g Englihs, Myanmar]
 
-This project is a starting point for a Flutter application.
+# GetX State Manamgent with Example
+- [Why to learn state management GetX]
+- [GetX Counter Example, i.e In this example we will create a simple counter app with getx to increment the value of coutner]
+- [GetX Example Two]
+- [GetX Example Three]
+- [Favourite App with GetX]
+- [GetX Image Picker]
+- [Login(Post,Put, Delete) Api With GetX]
+- [Get Api with GetX]
 
-A few resources to get you started if this is your first Flutter project:
+- [Let's learn how to write clearn code using MVVM with GETx and REST APIs]
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# GetX State Manamgent With MVVM with REST APIs
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [Roadmap Flutter GetX Mvvm/Mvc Architecture ]
+- [What is MVVM/MVC Pattern/Architecture ]
+- [Create Project, Add Pacakges and Directories with Purpose]
+- [Handle App APIs Exceptiions]
+- [Handle APIs Response]
+- [Network API Services]
+- [Routes]
+- Code Refactoring
