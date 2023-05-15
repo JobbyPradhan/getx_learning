@@ -4,18 +4,12 @@ GetX Utilities
 
 ## Getting Started
 
-In first day we will learn about how to create snack bar,alert box,bottom sheet and change theme
+In second day we will learn about how to create routes, height, width and language change
 using getx.
 
-* Importance note when you use getx you need to replace Material App to GetMaterial App
--  _return GetMaterialApp(
-  title: 'Flutter Demo',
-  theme: ThemeData(
-  colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-  useMaterial3: true,
-  ),
-  home: const HomePage(),
-  );_
+- When you set height and width for responsive ui, you need to MediaQuery.of(context).size.height *1 in getx "Get.height*1" very simple.
+- But My Opinion used MedialQuery.
+
 
 - [Flutter Getx Documentation - GitHub Pages](https://chornthorn.github.io/getx-docs/docs)
 

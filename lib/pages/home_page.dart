@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx_learning/pages/detail_page.dart';
+import 'package:getx_learning/routes/my_routes.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -23,27 +25,31 @@ class _HomePageState extends State<HomePage> {
               subtitle: const Text("click this card will show dialog"),
               onTap: () {
                 Get.defaultDialog(
-                    title: "Delete Card",
-                    titlePadding: const EdgeInsets.only(top: 16),
-                    middleText: "Are you sure you want to delete this card ?",
-                   /* content: const Column(
+                  title: "Delete Card",
+                  titlePadding: const EdgeInsets.only(top: 16),
+                  middleText: "Are you sure you want to delete this card ?",
+                  /* content: const Column(
                       children: [
                         Text("This is text"),
                         Text("This is text"),
                         Text("This is text"),
                       ],
                     ),*/
-                    contentPadding: const EdgeInsets.all(16),
-                    textConfirm: 'Yes',
-                   /* onConfirm: () => {
+                  contentPadding: const EdgeInsets.all(16),
+                  textConfirm: 'Yes',
+                  /* onConfirm: () => {
                       Get.back()
                     },*/
-                    confirm: TextButton(onPressed: (){
-                      Get.back();
-                    }, child: Text('Ok')),
-                    cancel: TextButton(onPressed: (){
-                      Get.back();
-                    }, child: Text('Cancel')),
+                  confirm: TextButton(
+                      onPressed: () {
+                        Get.back();
+                      },
+                      child: Text('Ok')),
+                  cancel: TextButton(
+                      onPressed: () {
+                        Get.back();
+                      },
+                      child: Text('Cancel')),
                   //  textCancel: 'No'
                 );
               },
@@ -54,36 +60,52 @@ class _HomePageState extends State<HomePage> {
               title: const Text("GetX Bottom Sheet"),
               subtitle: const Text("click this card will show bottom sheet"),
               onTap: () {
-                Get.bottomSheet(
-                    Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        color: Colors.white
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Column(
-                          children: [
-                            ListTile(
-                              leading: Icon(Icons.light_mode),
-                              title: Text('Light Theme'),
-                              onTap: (){
-                                  Get.changeTheme(ThemeData.light());
-                              },
-                            ),
-                            ListTile(
-                              leading: Icon(Icons.dark_mode),
-                              title: Text('Dark Theme'),
-                              onTap: (){
-                                Get.changeTheme(ThemeData.dark());
-                              },
-                            )
-                          ],
+                Get.bottomSheet(Container(
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: Colors.white),
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Column(
+                      children: [
+                        ListTile(
+                          leading: Icon(Icons.light_mode),
+                          title: Text('Light Theme'),
+                          onTap: () {
+                            Get.changeTheme(ThemeData.light());
+                          },
                         ),
-                      ),
-                    )
-                  //  textCancel: 'No'
-                );
+                        ListTile(
+                          leading: Icon(Icons.dark_mode),
+                          title: Text('Dark Theme'),
+                          onTap: () {
+                            Get.changeTheme(ThemeData.dark());
+                          },
+                        )
+                      ],
+                    ),
+                  ),
+                )
+                    //  textCancel: 'No'
+                    );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: const Text("GetX Go to next screen"),
+              subtitle:
+                  const Text("click this card will navigate another screen"),
+              onTap: () {
+                /*Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const DetailPages()));*/
+                // Get.to(const DetailPages(name: "From Home",));
+                //with routes
+                Get.toNamed(MyRoutes.detailRoutes,arguments: [
+                  'From Home'
+                ]);
               },
             ),
           )
