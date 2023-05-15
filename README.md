@@ -8,7 +8,7 @@ In first day we will learn about how to create snack bar,alert box,bottom sheet 
 using getx.
 
 * Importance note when you use getx you need to replace Material App to GetMaterial App
-  _return GetMaterialApp(
+-  _return GetMaterialApp(
   title: 'Flutter Demo',
   theme: ThemeData(
   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
