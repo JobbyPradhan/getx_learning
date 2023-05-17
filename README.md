@@ -4,11 +4,8 @@ GetX Utilities
 
 ## Getting Started
 
-In second day we will learn about how to create routes, height, width and language change
+In third day we will learn about how to create state, manage state
 using getx.
-
-- When you set height and width for responsive ui, you need to MediaQuery.of(context).size.height *1 in getx "Get.height*1" very simple.
-- But My Opinion used MedialQuery.
 
 
 - [Flutter Getx Documentation - GitHub Pages](https://chornthorn.github.io/getx-docs/docs)
